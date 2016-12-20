@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#clock {
+    margin-top: 150px;
+    font-weight: 300;
+    font-size: 100px;
+    text-shadow: 1px 1px 1px #000000;
+
+}
+
+#clock-title {
+    margin-top: 50px;
+    font-size: 2em;
+}
+
+#footer {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+#link {
+    color: white;
+    text-decoration: none;
+}
+
+#link:hover {
+    text-decoration: underline;
+}
