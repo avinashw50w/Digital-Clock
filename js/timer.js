@@ -21,30 +21,23 @@ function myClock() {
 
     var clockStr = hours + ' : ' + minutes + ' : ' + seconds;
 
-    var hexColorStr = '#' + hours + minutes + seconds;
-
-    clock.textContent = clockStr;
-
-
-}
-
-function colorChanger() {
     var hexDigits = '0123456789abcdef'
 
     var color = '#' + hexDigits[Math.floor(Math.random()*16)]
                     + hexDigits[Math.floor(Math.random()*16)]
                     + hexDigits[Math.floor(Math.random()*16)]
                     + hexDigits[Math.floor(Math.random()*16)]
-                    + hexDigits[Math.floor(Math.random()*16)]
-                    + hexDigits[Math.floor(Math.random()*16)];
+                    + seconds;
 
     if(color === '#ffffff') {
         color = '#000000';
     }
-    
+
+    clock.textContent = clockStr;
+
     document.body.style.backgroundColor = color;
+
 }
 
-setInterval(colorChanger, 1000);
 
 setInterval(myClock, 1000);
