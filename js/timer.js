@@ -25,9 +25,9 @@ function myClock() {
 
     var color = '#' + hexDigits[Math.floor(Math.random()*16)]
                     + hexDigits[Math.floor(Math.random()*16)]
+                    + minutes
                     + hexDigits[Math.floor(Math.random()*16)]
-                    + hexDigits[Math.floor(Math.random()*16)]
-                    + seconds;
+                    + hexDigits[Math.floor(Math.random()*16)];
 
     if(color === '#ffffff') {
         color = '#000000';
