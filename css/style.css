@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
-
 body {
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -21,17 +20,17 @@ body {
 }
 
 #footer {
-    margin-top: 190px;
+    margin-top: 191px;
     font-family: 'Amatic SC', cursive;
     font-size: 1.5em;
     font-weight: 200;
 }
 
-#link {
+a {
     color: white;
     text-decoration: none;
 }
 
-#link:hover {
+a:hover {
     text-decoration: underline;
 }
