@@ -6,17 +6,25 @@ body {
     color: white;
 }
 
-#clock {
+#clock-title {
+    margin-top: 50px;
+    font-size: 2em;
+}
+
+.clock-div {
     margin-top: 150px;
+}
+
+.clock-div p {
+    display: inline;
+    padding: 10px;
+}
+
+#clock {   
     font-weight: 300;
     font-size: 100px;
     text-shadow: 1px 1px 1px #000000;
 
-}
-
-#clock-title {
-    margin-top: 50px;
-    font-size: 2em;
 }
 
 #footer {

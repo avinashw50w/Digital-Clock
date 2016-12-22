@@ -1,11 +1,21 @@
 var clock = document.getElementById('clock');
-
+var mid = document.getElementById('ampm');
 
 function myClock() {
     var time = new Date();
-    var hours = (time.getHours() % 12).toString();
-    var minutes = time.getMinutes().toString();
-    var seconds = time.getSeconds().toString();
+    var hours = time.getHours()
+    var minutes = time.getMinutes();
+    var seconds = time.getSeconds();
+
+    var ampm = hours >= 12 ? 'PM' : 'AM';
+
+    hours %= 12;
+
+    hours = hours ? hours : 12;
+
+    hours = hours.toString();
+    minutes = minutes.toString();
+    seconds = seconds.toString();
 
     if(hours.length < 2) {
         hours = '0' + hours;
@@ -34,6 +44,8 @@ function myClock() {
     }
 
     clock.textContent = clockStr;
+
+    mid.textContent = ampm;
 
     document.body.style.backgroundColor = color;
 
